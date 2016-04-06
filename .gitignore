@@ -9,6 +9,7 @@ node_modules
 build
 deploy
 dist
+bundle.js
 
 # OSX, pleeze.
 .DS_Store
