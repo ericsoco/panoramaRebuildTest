@@ -1,0 +1,63 @@
+@charset "UTF-8";
+.panorama.item-selector {
+  position: relative;
+  display: inline-block;
+  width: 10em;
+  height: 100%; }
+  .panorama.item-selector h3 {
+    margin-bottom: 0.5em; }
+  .panorama.item-selector ul {
+    margin: 0;
+    padding: 0 0.5em 0 0;
+    height: 65%;
+    overflow-y: auto; }
+    .panorama.item-selector ul li {
+      margin-bottom: 0.1em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+      list-style-type: none; }
+      .panorama.item-selector ul li.selected {
+        border-width: 1px;
+        border-style: solid;
+        padding: 0.1em; }
+  .panorama.item-selector .scroll-arrow {
+    width: 100%;
+    text-align: center;
+    cursor: pointer; }
+    .panorama.item-selector .scroll-arrow::before {
+      content: '〉';
+      display: inline-block;
+      padding-left: 0.5em;
+      -webkit-transform: rotate(-0.25turn);
+      transform: rotate(-0.25turn); }
+    .panorama.item-selector .scroll-arrow.down-arrow::before {
+      -webkit-transform: rotate(0.25turn);
+      transform: rotate(0.25turn); }
+
+.panorama.area-chart path {
+  stroke: none;
+  fill: steelblue; }
+
+.panorama.area-chart .axis {
+  font: 10px sans-serif; }
+
+.panorama.area-chart .axis path,
+.panorama.area-chart .axis line {
+  stroke: #000;
+  fill: none;
+  shape-rendering: crispEdges; }
+
+.panorama.offset-area-chart {
+  position: relative; }
+  .panorama.offset-area-chart .area {
+    fill-opacity: 0.25; }
+  .panorama.offset-area-chart .lifespan, .panorama.offset-area-chart circle {
+    opacity: 0.25; }
+  .panorama.offset-area-chart circle {
+    stroke: none; }
+  .panorama.offset-area-chart .selected .area {
+    fill-opacity: 0.9; }
+  .panorama.offset-area-chart .selected .lifespan, .panorama.offset-area-chart .selected circle {
+    opacity: 0.9; }

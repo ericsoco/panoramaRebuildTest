@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_PATH=$(pwd)/node_modules/ npm run build; serve",
-    "build": "browserify index.js -o bundle.js -d -t [ babelify --presets [ es2015 react stage-0 ] ]"
+    "start": "NODE_PATH=$(pwd)/node_modules/ npm run build; npm run build-css; serve",
+    "build": "browserify index.js -o bundle.js -d -t [ babelify --presets [ es2015 react stage-0 ] ]",
+    "build-css": "node-sass index.scss bundle.css"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
+    "node-sass": "^3.4.2",
     "serve": "^1.4.0"
   }
 }
