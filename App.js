@@ -1,7 +1,7 @@
 import React from 'react';
 
 import itemSelectorData from './data/itemSelector.json';
-import ItemSelector from '@stamen/panorama-rebuild/src/ItemSelector';   // TODO: this should be '@stamen/panorama-rebuild/itemSelector'
+import ItemSelector from '@stamen/panorama-rebuild/ItemSelector';
 
 import AreaChartExample from './example-areachart.jsx';
 

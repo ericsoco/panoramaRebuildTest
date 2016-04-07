@@ -1,7 +1,7 @@
 import * as React from 'react';
 import d3 from 'd3';
-import AreaChart from '@stamen/panorama-rebuild/src/AreaChart';               // TODO: this should be '@stamen/panorama-rebuild/areaChart'
-import OffsetAreaChart from '@stamen/panorama-rebuild/src/OffsetAreaChart';   // TODO: this should be '@stamen/panorama-rebuild/offsetAreaChart'
+import AreaChart from '@stamen/panorama-rebuild/AreaChart';
+import OffsetAreaChart from '@stamen/panorama-rebuild/OffsetAreaChart';
 
 export default class AreaChartExample extends React.Component {
 
